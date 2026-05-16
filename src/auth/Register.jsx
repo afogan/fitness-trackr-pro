@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "./AuthContext";
+import { useAuth } from "../auth/AuthContext";
 import { Link, useNavigate } from "react-router";
 
 /** A form that allows users to register for a new account */
