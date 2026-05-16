@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createActivity } from "../src/api/api/activities";
+import { createActivity } from "../api/activities";
 import { useAuth } from "../auth/AuthContext";
 
 /** Form for a user to create a new activity with a name and description. */

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getActivities } from "../src/api/api/activities";
+import { getActivities } from "../api/activities";
 
 import ActivityList from "./ActivityList";
 import ActivityForm from "./ActivityForm";

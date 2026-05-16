@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router";
-import { deleteActivity, getActivity } from "../src/api/api/activities";
+import { deleteActivity, getActivity } from "../api/activities";
 import { useAuth } from "../auth/AuthContext";
 
 export default function ActivityDetails() {
