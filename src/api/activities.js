@@ -11,7 +11,17 @@ export async function getActivities() {
     return [];
   }
 }
-
+/** Fetches an activity by ID from the API. */
+export async function getActivity(id) {
+  try {
+    const response = await fetch(API + "/activities/" + id);
+    const result = await response.json();
+    return result;
+  } catch (e) {
+    console.error(e);
+    return null;
+  }
+}
 /**
  * Sends a new activity to the API to be created.
  * A valid token is required.
@@ -35,11 +45,6 @@ export async function createActivity(token, activity) {
     throw Error(result.message);
   }
 }
-
-/**
- * Requests the API to delete the activity with the given ID.
- * A valid token is required.
- */
 export async function deleteActivity(token, id) {
   if (!token) {
     throw Error("You must be signed in to delete an activity.");
